@@ -20,3 +20,19 @@ GENERATE_DOCSET        = NO
 GENERATE_TREEVIEW      = YES
 QUIET                  = YES
 WARN_IF_UNDOCUMENTED   = YES
+
+# Graphviz (dot) support for flowcharts and diagrams
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_NUM_THREADS        = 2
+DOT_MULTI_TARGETS      = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+# If Graphviz is not in your PATH, set DOT_PATH to its bin directory
+DOT_PATH               = "C:/Program Files/Graphviz/bin"
