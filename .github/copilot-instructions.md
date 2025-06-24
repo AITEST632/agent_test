@@ -79,6 +79,20 @@ int init_uart(uint32_t baudrate);
 
 ---
 
+# 🛠️ Automation: Push Changes
+
+- ✅ To push all changes to your remote repository, simply run the following command in your project directory:
+
+  ```sh
+  bash git-auto-push.sh
+  ```
+
+- ✅ This script will automatically add, commit, and push all changes with a default commit message.
+- ✅ You can edit the script to customize the commit message if needed.
+- ✅ Use this command whenever you want to push changes, instead of running `git add`, `git commit`, and `git push` separately.
+
+---
+
 
 End of Ruleset.
 
