@@ -4,7 +4,6 @@
 /**
  * @brief Application entry point for LED blink demo.
  * @return int 0 on success (never returns in embedded loop).
- * added line to test automation in app_main.c
  */
 int app_main(void)
 {
