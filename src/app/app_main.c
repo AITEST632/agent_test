@@ -6,6 +6,7 @@
  * @return int 0 on success (never returns in embedded loop).
  *added comments
  *one more comment added
+ *new commnet added
  */
 int app_main(void)
 {
