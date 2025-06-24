@@ -55,102 +55,30 @@
 
 ---
 
-## 🧪 Testing & Debugging
 
-- ✅ Each module must have a unit test or test hook where applicable.
-- ✅ Use preprocessor flags for test/debug code (`#ifdef DEBUG_MODE`).
-- ✅ Avoid permanent debug prints in production (`printf`, `UART_send`).
-
----
-
-## 🧷 Memory & Safety
-
-- ✅ Always initialize variables.
-- ✅ Avoid dynamic memory (`malloc/free`) in firmware unless justified.
-- ✅ Check for buffer overflows in all memory operations (`memcpy`, `strncpy`, etc.).
-- ✅ Never assume memory alignment. Use `packed` structs if necessary.
-- ✅ Avoid global variables unless absolutely required.
+## 📖 Doxygen Document
+- ✅ Use Doxygen for generating documentation.
+   - ✅ 1. If the `Doxyfile` or `Docs` folder does not exist, they must be created automatically.
+   - ✅ 2. The workflow must be atomic: after creating the `Doxyfile` and `Docs` folder (if missing), immediately run `doxygen Doxyfile` in the same step, with no user intervention or extra prompt required.
+   - ✅ 3. The process must always ensure the Doxyfile's `OUTPUT_DIRECTORY` is set to `Docs` (case-sensitive).
+   - ✅ 4. The generated HTML documentation must be in `Docs/html/`.
+   - ⚠️ All steps must be followed for every documentation generation or update, and the process must be fully automated and require no user intervention.
+  
 
 ---
 
-## 🕒 Timing & Delays
-
-- ✅ Use timer modules or OS delays, not busy-wait loops.
-- ❌ Avoid hardcoded delays (`for` loops for delay).
-
----
-
-## 🚩 Error Handling
-
-- ✅ All public functions should return status codes or have error callbacks.
-- ✅ Never silently ignore errors.
-- ✅ Use `enum` or `#define` for error codes.
+## Example Doxygen Comment
+```c
+/**
+ * @brief Initializes the UART peripheral.
+ * @param baudrate The baudrate to use.
+ * @return 0 on success, non-zero error code on failure.
+ */
+int init_uart(uint32_t baudrate);
+```
 
 ---
 
-## 🔐 MISRA Compliance (if applicable)
-
-- ✅ Follow MISRA C:2012 guidelines where applicable.
-- ❌ No use of non-standard libraries or compiler extensions without documentation.
-
----
-
-## 📜 Documentation & Comments
-
-- ✅ Every function should have a comment block describing:
-
-  - Purpose
-  - Parameters
-  - Return value
-  - Side effects (if any)
-
-  ```c
-  /**
-   * @brief Initializes the UART peripheral.
-   * @param baudrate The baudrate to use.
-   * @return 0 on success, non-zero error code on failure.
-   */
-  int init_uart(uint32_t baudrate);
-  ```
-
-- ✅ Use `//` for inline comments.
-
-- ❌ Do not use comments to explain what is already obvious.
-
----
-
-## 🔄 Version Control & Review
-
-- ✅ Code must be pushed with meaningful commit messages.
-- ✅ Each commit should pass basic static checks and unit tests.
-- ✅ Code review is mandatory for every pull request.
-
----
-
-## ✨ CI/CD and Build Process
-
-- ✅ Use Makefiles or CMake for consistent builds.
-- ✅ All builds must be reproducible with a single command.
-- ✅ Include build output and error logs in review if failure occurs.
-- ✅ Setup CI pipelines to run static analysis, format check, and unit tests.
-
----
-
-## ⏱ RTOS & Multithreading (if applicable)
-
-- ✅ Threads must have defined priorities and stack sizes.
-- ✅ Use semaphores/mutexes for shared resources.
-- ✅ Avoid deadlocks and starvation through careful resource planning.
-
----
-
-## 💪 Bootloaders & Firmware Updates
-
-- ✅ Ensure update integrity via CRC or SHA verification.
-- ✅ Maintain a rollback mechanism if update fails.
-- ✅ Update code must be tested in both normal and edge-case conditions.
-
----
 
 End of Ruleset.
 

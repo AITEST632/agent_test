@@ -1,5 +1,9 @@
 #include "led_hal.h"
+#ifdef UNIT_TEST
+#include "mock_avr_io.h"
+#else
 #include <avr/io.h>
+#endif
 
 #define LED_PORT   PORTB
 #define LED_DDR    DDRB
