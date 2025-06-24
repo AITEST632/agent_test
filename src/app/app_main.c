@@ -7,6 +7,7 @@
  *added comments
  *one more comment added
  *new commnet added
+ *coment added to test git bash
  */
 int app_main(void)
 {
