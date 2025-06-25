@@ -63,7 +63,18 @@
    - ✅ 3. The process must always ensure the Doxyfile's `OUTPUT_DIRECTORY` is set to `Docs` (case-sensitive).
    - ✅ 4. The generated HTML documentation must be in `Docs/html/`.
    - ⚠️ All steps must be followed for every documentation generation or update, and the process must be fully automated and require no user intervention.
-  
+   - ✅ 5. To generate function call/caller graphs (function call diagrams), ensure the following Doxyfile options are set:
+
+     ```
+     HAVE_DOT      = YES
+     CALL_GRAPH    = YES
+     CALLER_GRAPH  = YES
+     DOT_IMAGE_FORMAT = svg
+     CALL_GRAPH_DEPTH = 3
+     ```
+
+   - ✅ 6. Graphviz (dot) must be installed and available in the system PATH for diagrams to be generated.
+   - ✅ 7. These diagrams show function call relationships, not classic flowcharts. For classic flowcharts, use a separate tool.
 
 ---
 
