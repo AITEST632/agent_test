@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "AI_AGENT Embedded C Project", "index.html", [
+    [ "AI_AGENT", "md__r_e_a_d_m_e.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
