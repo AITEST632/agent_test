@@ -104,6 +104,28 @@ int init_uart(uint32_t baudrate);
 
 ---
 
+# 🔀 Merge Request Workflow
+
+- ✅ To propose merging changes from the `Test_Branch` (or any feature branch) into the `main` branch, follow this process:
+
+  1. Ensure your feature branch (e.g., `Test_Branch`) is up to date and pushed to the remote repository.
+  2. Open a Pull Request (Merge Request) from your feature branch to the `main` branch using your Git hosting platform (e.g., GitHub).
+  3. Assign reviewers as required and address any review comments.
+  4. After approval, complete the merge using the platform's interface, or locally with:
+
+     ```sh
+     git checkout main
+     git pull origin main
+     git merge --no-ff Test_Branch -m "Merge Test_Branch with merge commit"
+     git push origin main
+     ```
+
+  5. Verify the merge commit appears in your Git graph for clear branch history.
+
+- ⚠️ Always use `--no-ff` for merges to ensure a merge commit is created and the branch structure is visible in the Git graph.
+
+---
+
 
 End of Ruleset.
 
