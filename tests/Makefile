@@ -21,15 +21,18 @@ CC = gcc
 #   -DUNIT_TEST   : enables test-specific code (e.g., mocks)
 #   -Wall -Wextra : enable all warnings
 #   -std=c99      : use C99 standard
-CFLAGS = -I. -I../inc -I../inc/hal -I. -DUNIT_TEST -Wall -Wextra -std=c99
+CFLAGS = -I. -I../inc -I../inc/hal -I../inc/services -I. -DUNIT_TEST -Wall -Wextra -std=c99
 UNITY_SRC = unity.c
 
 # Test target for led_hal
 # TEST_SRC includes the test file and the module under test
 TEST_SRC = test_led_hal.c ../src/hal/led_hal.c
 
+# Add test target for app_main with all dependencies
+TEST_APP_MAIN_SRC = test_app_main.c ../src/app/app_main.c ../src/hal/led_hal.c ../src/services/delay_service.c mock_avr_io.c
+
 # Default target: build the test executable
-all: test_led_hal.exe
+all: test_led_hal.exe test_app_main.exe
 
 # Reminder to download Unity if missing
 unity.c:
@@ -41,9 +44,15 @@ unity.c:
 test_led_hal.exe: $(TEST_SRC) $(UNITY_SRC)
 	$(CC) $(CFLAGS) -o $@ $^
 
+test_app_main.exe: $(TEST_APP_MAIN_SRC) $(UNITY_SRC)
+	$(CC) $(CFLAGS) -o $@ $^
+
 # Run the test executable
 run: test_led_hal.exe
 	./test_led_hal.exe
+
+run_app_main: test_app_main.exe
+	./test_app_main.exe
 
 # Clean build artifacts
 clean:
