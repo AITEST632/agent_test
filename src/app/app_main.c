@@ -8,12 +8,23 @@
  *one more comment added
  *new commnet added
  *coment added to test git bash
+ *new branch added
  */
 int app_main(void)
 {
     led_init();
     while (1)
     {
+        led_on();
+        delay_ms(500);
+        led_off();
+        delay_ms(500);
+
+        led_on();
+        delay_ms(500);
+        led_off();
+        delay_ms(500);
+
         led_on();
         delay_ms(500);
         led_off();
