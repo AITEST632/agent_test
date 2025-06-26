@@ -19,6 +19,16 @@ int app_main(void)
         delay_ms(500);
         led_off();
         delay_ms(500);
+
+        led_on();
+        delay_ms(500);
+        led_off();
+        delay_ms(500);
+
+        led_on();
+        delay_ms(500);
+        led_off();
+        delay_ms(500);
     }
     return 0;
 }
