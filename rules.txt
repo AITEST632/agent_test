@@ -1,6 +1,5 @@
 1- Build the code.
 2- run the unit test cases.
 3- come one directory back. 
-3- create document.
-4- push the recent changes. 
-5- merge it to the main branch.
+4- create document.
+5- push the recent changes. 
