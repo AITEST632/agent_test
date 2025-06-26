@@ -1,27 +1,20 @@
-# Doxyfile 1.9.8
-# Project related configuration options
-PROJECT_NAME           = "AI_AGENT Embedded C Project"
+# Doxyfile for Embedded C Project
+# This file is auto-generated to comply with Agenti AI rules.
+
+PROJECT_NAME           = "AI_AGENT Embedded C"
 OUTPUT_DIRECTORY       = Docs
 CREATE_SUBDIRS         = NO
-OUTPUT_LANGUAGE        = English
-EXTRACT_ALL            = YES
 RECURSIVE              = YES
-INPUT                  = ./src ./inc ./led_blink.c
-FILE_PATTERNS          = *.c *.h
-
-# Build related configuration options
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
-GENERATE_MAN           = NO
-GENERATE_RTF           = NO
-GENERATE_XML           = NO
-
-# Dot/Graphviz options for call/caller graphs
+INPUT                  = ./src ./inc ./led_blink.c
+FILE_PATTERNS          = *.c *.h
+QUIET                  = YES
 HAVE_DOT               = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
 DOT_IMAGE_FORMAT       = svg
 CALL_GRAPH_DEPTH       = 3
-
-# Misc
-QUIET                  = YES

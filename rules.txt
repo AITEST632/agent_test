@@ -1,0 +1,6 @@
+1- Build the code.
+2- run the unit test cases.
+3- come one directory 
+3- create a document for this workspace.
+4- push the recent changes. 
+5- merge it to the main branch.
