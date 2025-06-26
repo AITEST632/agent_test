@@ -1,18 +1,16 @@
-# Doxyfile for Embedded C Project
-# This file is auto-generated to comply with Agenti AI rules.
+# Doxyfile 1.9.8
+# This is a minimal Doxyfile for Embedded C documentation generation
 
-PROJECT_NAME           = "AI_AGENT Embedded C"
+PROJECT_NAME           = "Embedded C Project"
 OUTPUT_DIRECTORY       = Docs
 CREATE_SUBDIRS         = NO
-RECURSIVE              = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
 EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = YES
-EXTRACT_STATIC         = YES
+RECURSIVE              = YES
+INPUT                  = src inc
+FILE_PATTERNS          = *.c *.h
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
-INPUT                  = ./src ./inc ./led_blink.c
-FILE_PATTERNS          = *.c *.h
-QUIET                  = YES
 HAVE_DOT               = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
