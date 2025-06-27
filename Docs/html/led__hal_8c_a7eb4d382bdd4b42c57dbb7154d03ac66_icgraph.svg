@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Initializes the LED hardware (sets the pin as output).">
+<g id="a_Node000001"><a xlink:title="Initializes the LED hardware.">
 <polygon fill="#999999" stroke="#666666" points="140.75,-20 94,-20 94,0 140.75,0 140.75,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="117.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">led_init</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="appmain_8c.html#a144c9a97815e4b794fd4352aedd33695" target="_top" xlink:title="Main application entry point. Initializes the LED and blinks it in a loop.">
+<g id="a_Node000002"><a xlink:href="app__main_8c.html#a144c9a97815e4b794fd4352aedd33695" target="_top" xlink:title="Main application entry point. Initializes the LED and blinks it in a loop.">
 <polygon fill="white" stroke="#666666" points="58,-20 0,-20 0,0 58,0 58,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="29" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">app_main</text>
 </a>

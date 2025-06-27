@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Main application entry point. Initializes the LED and blinks it in a loop." alt="" coords="5,81,83,108"/>
 <area shape="rect" id="Node000002" href="$delay__service_8c.html#aa0dce6d249d81fb85b082273270ba710" title="Delays execution for a specified number of milliseconds." alt="" coords="131,5,208,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,78,131,38,134,43,69,83"/>
-<area shape="rect" id="Node000003" href="$led__hal_8c.html#a7eb4d382bdd4b42c57dbb7154d03ac66" title="Initializes the LED hardware (sets the pin as output)." alt="" coords="138,56,200,83"/>
+<area shape="rect" id="Node000003" href="$led__hal_8c.html#a7eb4d382bdd4b42c57dbb7154d03ac66" title="Initializes the LED hardware." alt="" coords="138,56,200,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,84,122,76,123,81,84,89"/>
 <area shape="rect" id="Node000004" href="$led__hal_8c.html#a429f05b7eac928971c19e37ddc7079be" title="Turns the LED off." alt="" coords="140,107,199,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,100,125,108,124,114,83,105"/>

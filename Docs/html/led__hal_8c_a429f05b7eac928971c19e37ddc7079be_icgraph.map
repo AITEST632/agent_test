@@ -1,5 +1,5 @@
 <map id="led_off" name="led_off">
 <area shape="rect" id="Node000001" title="Turns the LED off." alt="" coords="131,5,190,32"/>
-<area shape="rect" id="Node000002" href="$appmain_8c.html#a144c9a97815e4b794fd4352aedd33695" title="Main application entry point. Initializes the LED and blinks it in a loop." alt="" coords="5,5,83,32"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html#a144c9a97815e4b794fd4352aedd33695" title="Main application entry point. Initializes the LED and blinks it in a loop." alt="" coords="5,5,83,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,21,83,21,83,16,115,16"/>
 </map>

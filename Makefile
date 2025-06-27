@@ -6,7 +6,7 @@
 #
 CC = gcc
 CFLAGS = -Iinc -Iinc/app -Iinc/hal -Iinc/services -Itests -Wall -Wextra -std=c99
-SRC = main.c src/app/appmain.c src/hal/led_hal.c src/services/delay_service.c tests/mock_avr_io.c
+SRC = main.c src/app/app_main.c src/hal/led_hal.c src/services/delay_service.c tests/mock_avr_io.c
 OUT = main_app.exe
 
 CFLAGS += -DUNIT_TEST -I. # Use mocks for PC build

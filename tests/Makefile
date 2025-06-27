@@ -29,7 +29,7 @@ UNITY_SRC = unity.c
 TEST_SRC = test_led_hal.c ../src/hal/led_hal.c
 
 # Add test target for app_main with all dependencies
-TEST_APP_MAIN_SRC = test_app_main.c ../src/app/appmain.c ../src/hal/led_hal.c ../src/services/delay_service.c mock_avr_io.c
+TEST_APP_MAIN_SRC = test_app_main.c ../src/app/app_main.c ../src/hal/led_hal.c ../src/services/delay_service.c mock_avr_io.c
 
 # Default target: build the test executable
 all: test_led_hal.exe test_app_main.exe
