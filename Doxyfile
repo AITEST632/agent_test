@@ -1,13 +1,11 @@
-# Doxyfile 1.9.8
-# This is a minimal Doxyfile for Embedded C documentation generation
-
+# Doxyfile for Embedded C Project
 PROJECT_NAME           = "Embedded C Project"
 OUTPUT_DIRECTORY       = Docs
 CREATE_SUBDIRS         = NO
 OPTIMIZE_OUTPUT_FOR_C  = YES
 EXTRACT_ALL            = YES
 RECURSIVE              = YES
-INPUT                  = src inc
+INPUT                  = ./src ./inc
 FILE_PATTERNS          = *.c *.h
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
@@ -16,3 +14,4 @@ CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
 DOT_IMAGE_FORMAT       = svg
 CALL_GRAPH_DEPTH       = 3
+QUIET                  = YES

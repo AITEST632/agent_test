@@ -1,5 +1,7 @@
-1- Build the code.
-2- run the unit test cases.
-3- come one directory back. 
-4- create document.
-5- push the recent changes. 
+1- Build the code, if build fails or any error occurs then stop the process.
+2- review the code file from `src` folder line by line according to rules and give suggessions.
+3- run the unit test cases.
+4- come to root folder after running unit tests.
+5- create document.
+
+    
