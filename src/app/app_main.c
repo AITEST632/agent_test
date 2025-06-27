@@ -22,4 +22,12 @@ int app_main(void)
         led_off();
         delay_ms(BLINK_DELAY_MS);
     }
+    // Should never reach here
+    return 0;
 }
+
+
+
+
+
+

@@ -1,8 +1,10 @@
-1- Build the code.
-2- check for errors and warnings in terminal.
-3- review the code file from `src` folder line by line according to rules and give suggessions.
-4- run the unit test cases.
-5- come to root folder after running unit tests.
-6- create document.
+- review the code file from `src` folder line by line according to rules and give suggessions.
+- Build the code,
+-save the build log in `build.log`.
+- if Build is successful:
+  - run the unit test cases.
+  - come to root folder after running unit tests.
+  - create document.
+
 
     

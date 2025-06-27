@@ -1,0 +1,18 @@
+# Doxyfile for Embedded C Project
+# See: https://www.doxygen.nl/manual/config.html
+
+PROJECT_NAME           = "Embedded C Project"
+OUTPUT_DIRECTORY       = Docs
+CREATE_SUBDIRS         = NO
+EXTRACT_ALL            = YES
+RECURSIVE              = YES
+INPUT                  = src inc
+FILE_PATTERNS          = *.c *.h
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH_DEPTH       = 3
+QUIET                  = YES
