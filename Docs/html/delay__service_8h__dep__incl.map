@@ -1,7 +1,7 @@
 <map id="inc/services/delay_service.h" name="inc/services/delay_service.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="87,5,214,48"/>
-<area shape="rect" id="Node000002" href="$app__main_8c.html" title=" " alt="" coords="5,104,141,131"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html" title="Application entry point for LED blink example." alt="" coords="5,104,141,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,61,86,105,82,102,121,58"/>
-<area shape="rect" id="Node000003" href="$delay__service_8c.html" title=" " alt="" coords="165,96,293,139"/>
+<area shape="rect" id="Node000003" href="$delay__service_8c.html" title="Provides millisecond delay functionality for timing operations." alt="" coords="165,96,293,139"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,58,213,94,209,97,177,62"/>
 </map>

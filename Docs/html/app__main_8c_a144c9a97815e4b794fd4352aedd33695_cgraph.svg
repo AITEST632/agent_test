@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="led__hal_8c.html#a7eb4d382bdd4b42c57dbb7154d03ac66" target="_top" xlink:title="Initializes the LED hardware (sets the pin as output).">
+<g id="a_Node000003"><a xlink:href="led__hal_8c.html#a7eb4d382bdd4b42c57dbb7154d03ac66" target="_top" xlink:title="Initializes the LED hardware (sets pin as output).">
 <polygon fill="white" stroke="#666666" points="146.38,-96 99.62,-96 99.62,-76 146.38,-76 146.38,-96"/>
 <text xml:space="preserve" text-anchor="middle" x="123" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">led_init</text>
 </a>

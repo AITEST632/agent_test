@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Embedded C Project: src/app/app_main.c File Reference</title>
+<title>AI_AGENT: src/app/app_main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Embedded C Project
+   <div id="projectname">AI_AGENT
    </div>
   </td>
  </tr>
@@ -94,6 +94,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">app_main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Application entry point for LED blink example.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="led__hal_8h_source.html">hal/led_hal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="delay__service_8h_source.html">services/delay_service.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -105,7 +108,6 @@ Include dependency graph for app_main.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:abbbb0c1f5fc38b0a70f057ad43972907" id="r_abbbb0c1f5fc38b0a70f057ad43972907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbb0c1f5fc38b0a70f057ad43972907">BLINK_DELAY_MS</a>&#160;&#160;&#160;500</td></tr>
-<tr class="memdesc:abbbb0c1f5fc38b0a70f057ad43972907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main application loop for LED blinking.  <br /></td></tr>
 <tr class="separator:abbbb0c1f5fc38b0a70f057ad43972907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -114,7 +116,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:a144c9a97815e4b794fd4352aedd33695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main application entry point. Initializes the LED and blinks it in a loop.  <br /></td></tr>
 <tr class="separator:a144c9a97815e4b794fd4352aedd33695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Application entry point for LED blink example. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abbbb0c1f5fc38b0a70f057ad43972907" name="abbbb0c1f5fc38b0a70f057ad43972907"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbbb0c1f5fc38b0a70f057ad43972907">&#9670;&#160;</a></span>BLINK_DELAY_MS</h2>
 
@@ -126,10 +130,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Main application loop for LED blinking. </p>
-<p>Initializes the LED hardware and blinks the LED with a fixed delay.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success (theoretically unreachable due to infinite loop). </dd></dl>
 
 </div>
 </div>

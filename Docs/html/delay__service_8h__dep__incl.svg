@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="app__main_8c.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="app__main_8c.html" target="_top" xlink:title="Application entry point for LED blink example.">
 <polygon fill="white" stroke="#666666" points="101.5,-26 0,-26 0,-6 101.5,-6 101.5,-26"/>
 <text xml:space="preserve" text-anchor="middle" x="50.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/app/app_main.c</text>
 </a>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="delay__service_8c.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="delay__service_8c.html" target="_top" xlink:title="Provides millisecond delay functionality for timing operations.">
 <polygon fill="white" stroke="#666666" points="215.5,-32 120,-32 120,0 215.5,0 215.5,-32"/>
 <text xml:space="preserve" text-anchor="start" x="128" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/services/delay</text>
 <text xml:space="preserve" text-anchor="middle" x="167.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_service.c</text>
