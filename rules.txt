@@ -1,10 +1,13 @@
 - review the code file from `src` folder line by line according to rules and give suggessions.
-- Build the code,
--save the build log in `build.log`.
+- modify the code according to the suggessions if required.
+- Build the code ,save the build log in `build.log` in root directory.
 - if Build is successful:
-  - run the unit test cases.
-  - come to root folder after running unit tests.
-  - create document.
+  - run the unit test cases together from the `tests` directory from root directory.
+  - save the unit test results in `test_results.log` in root directory.
+  - analyse the unit test results and give summary.
+- come to `root` directory.
+- create document and stop.
+
 
 
     

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AI_AGENT: src/app/app_main.c File Reference</title>
+<title>Embedded C Project: src/app/app_main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AI_AGENT
+   <div id="projectname">Embedded C Project
    </div>
   </td>
  </tr>
@@ -95,20 +95,21 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Application entry point for LED blink example.  
+<p>Main application logic for LED blinking demo.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="led__hal_8h_source.html">hal/led_hal.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="led__hal_8h_source.html">hal/led_hal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="delay__service_8h_source.html">services/delay_service.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for app_main.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="app__main_8c__incl.svg" width="294" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="app__main_8c__incl.svg" width="315" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abbbb0c1f5fc38b0a70f057ad43972907" id="r_abbbb0c1f5fc38b0a70f057ad43972907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbb0c1f5fc38b0a70f057ad43972907">BLINK_DELAY_MS</a>&#160;&#160;&#160;500</td></tr>
-<tr class="separator:abbbb0c1f5fc38b0a70f057ad43972907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5469b58f1104aa28eee725dcb5ca230" id="r_ae5469b58f1104aa28eee725dcb5ca230"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5469b58f1104aa28eee725dcb5ca230">APP_MAIN_BLINK_DELAY_MS</a>&#160;&#160;&#160;500</td></tr>
+<tr class="separator:ae5469b58f1104aa28eee725dcb5ca230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -117,19 +118,21 @@ Functions</h2></td></tr>
 <tr class="separator:a144c9a97815e4b794fd4352aedd33695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Application entry point for LED blink example. </p>
+<div class="textblock"><p>Main application logic for LED blinking demo. </p>
+<dl class="section note"><dt>Note</dt><dd>This application runs an infinite loop and is intended for embedded systems only. </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="abbbb0c1f5fc38b0a70f057ad43972907" name="abbbb0c1f5fc38b0a70f057ad43972907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbbb0c1f5fc38b0a70f057ad43972907">&#9670;&#160;</a></span>BLINK_DELAY_MS</h2>
+<a id="ae5469b58f1104aa28eee725dcb5ca230" name="ae5469b58f1104aa28eee725dcb5ca230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5469b58f1104aa28eee725dcb5ca230">&#9670;&#160;</a></span>APP_MAIN_BLINK_DELAY_MS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLINK_DELAY_MS&#160;&#160;&#160;500</td>
+          <td class="memname">#define APP_MAIN_BLINK_DELAY_MS&#160;&#160;&#160;500</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Delay in milliseconds for LED blink interval </p>
 
 </div>
 </div>

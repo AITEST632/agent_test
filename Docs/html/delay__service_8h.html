@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AI_AGENT: inc/services/delay_service.h File Reference</title>
+<title>Embedded C Project: inc/services/delay_service.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AI_AGENT
+   <div id="projectname">Embedded C Project
    </div>
   </td>
  </tr>
@@ -132,10 +132,19 @@ Functions</h2></td></tr>
 <p>Delays execution for a specified number of milliseconds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">ms</td><td>Number of milliseconds to delay.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Delays execution for a specified number of milliseconds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">ms</td><td>Number of milliseconds to delay. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Busy-wait loop, not suitable for precise timing or low-power applications. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

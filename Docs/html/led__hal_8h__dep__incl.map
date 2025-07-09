@@ -1,6 +1,6 @@
 <map id="inc/hal/led_hal.h" name="inc/hal/led_hal.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="90,5,205,32"/>
-<area shape="rect" id="Node000002" href="$app__main_8c.html" title="Application entry point for LED blink example." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html" title="Main application logic for LED blinking demo." alt="" coords="5,80,141,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,45,88,82,84,78,122,41"/>
 <area shape="rect" id="Node000003" href="$led__hal_8c.html" title="Hardware Abstraction Layer for LED control." alt="" coords="164,80,280,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,41,211,78,208,82,170,45"/>

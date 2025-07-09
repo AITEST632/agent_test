@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AI_AGENT: src/hal/led_hal.c File Reference</title>
+<title>Embedded C Project: src/hal/led_hal.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AI_AGENT
+   <div id="projectname">Embedded C Project
    </div>
   </td>
  </tr>
@@ -97,22 +97,26 @@ $(function(){ initResizable(false); });
 
 <p>Hardware Abstraction Layer for LED control.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="led__hal_8h_source.html">led_hal.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="led__hal_8h_source.html">led_hal.h</a>&quot;</code><br />
 <code>#include &lt;avr/io.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for led_hal.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="led__hal_8c__incl.svg" width="174" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="led__hal_8c__incl.svg" width="206" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a663daa01e565aee93c6f20c5845b90b4" id="r_a663daa01e565aee93c6f20c5845b90b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a>&#160;&#160;&#160;PORTB</td></tr>
-<tr class="separator:a663daa01e565aee93c6f20c5845b90b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb4252b35effe1188cb61b6124fa617" id="r_a2eb4252b35effe1188cb61b6124fa617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a>&#160;&#160;&#160;DDRB</td></tr>
-<tr class="separator:a2eb4252b35effe1188cb61b6124fa617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4553be4db9860d940f81d7447173b2f" id="r_ab4553be4db9860d940f81d7447173b2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4553be4db9860d940f81d7447173b2f">LED_PIN</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ab4553be4db9860d940f81d7447173b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7e849c5f8e24b41f0c21666c159b57" id="r_aea7e849c5f8e24b41f0c21666c159b57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7e849c5f8e24b41f0c21666c159b57">LED_HAL_PORTB</a>&#160;&#160;&#160;PORTB</td></tr>
+<tr class="memdesc:aea7e849c5f8e24b41f0c21666c159b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port register for LED control.  <br /></td></tr>
+<tr class="separator:aea7e849c5f8e24b41f0c21666c159b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7332d44cff2f3b707e13ac2279f01ed7" id="r_a7332d44cff2f3b707e13ac2279f01ed7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7332d44cff2f3b707e13ac2279f01ed7">LED_HAL_DDRB</a>&#160;&#160;&#160;DDRB</td></tr>
+<tr class="memdesc:a7332d44cff2f3b707e13ac2279f01ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data direction register for LED control.  <br /></td></tr>
+<tr class="separator:a7332d44cff2f3b707e13ac2279f01ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48886b7f0f2189b4cc29ab976209d8f" id="r_aa48886b7f0f2189b4cc29ab976209d8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48886b7f0f2189b4cc29ab976209d8f">LED_HAL_PIN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:aa48886b7f0f2189b4cc29ab976209d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin number for LED control.  <br /></td></tr>
+<tr class="separator:aa48886b7f0f2189b4cc29ab976209d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -128,46 +132,53 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Hardware Abstraction Layer for LED control. </p>
+<dl class="section note"><dt>Note</dt><dd>Platform-dependent: This implementation assumes AVR register naming and may need changes for other MCUs. </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2eb4252b35effe1188cb61b6124fa617" name="a2eb4252b35effe1188cb61b6124fa617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eb4252b35effe1188cb61b6124fa617">&#9670;&#160;</a></span>LED_DDR</h2>
+<a id="a7332d44cff2f3b707e13ac2279f01ed7" name="a7332d44cff2f3b707e13ac2279f01ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7332d44cff2f3b707e13ac2279f01ed7">&#9670;&#160;</a></span>LED_HAL_DDRB</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LED_DDR&#160;&#160;&#160;DDRB</td>
+          <td class="memname">#define LED_HAL_DDRB&#160;&#160;&#160;DDRB</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Data direction register for LED control. </p>
+
 </div>
 </div>
-<a id="ab4553be4db9860d940f81d7447173b2f" name="ab4553be4db9860d940f81d7447173b2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4553be4db9860d940f81d7447173b2f">&#9670;&#160;</a></span>LED_PIN</h2>
+<a id="aa48886b7f0f2189b4cc29ab976209d8f" name="aa48886b7f0f2189b4cc29ab976209d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48886b7f0f2189b4cc29ab976209d8f">&#9670;&#160;</a></span>LED_HAL_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LED_PIN&#160;&#160;&#160;0</td>
+          <td class="memname">#define LED_HAL_PIN&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pin number for LED control. </p>
+
 </div>
 </div>
-<a id="a663daa01e565aee93c6f20c5845b90b4" name="a663daa01e565aee93c6f20c5845b90b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a663daa01e565aee93c6f20c5845b90b4">&#9670;&#160;</a></span>LED_PORT</h2>
+<a id="aea7e849c5f8e24b41f0c21666c159b57" name="aea7e849c5f8e24b41f0c21666c159b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7e849c5f8e24b41f0c21666c159b57">&#9670;&#160;</a></span>LED_HAL_PORTB</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LED_PORT&#160;&#160;&#160;PORTB</td>
+          <td class="memname">#define LED_HAL_PORTB&#160;&#160;&#160;PORTB</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Port register for LED control. </p>
 
 </div>
 </div>
@@ -188,7 +199,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the LED hardware (sets pin as output). </p>
-<p>Initializes the LED hardware (sets the pin as output). </p>
+<p>Initializes the LED hardware (sets the pin as output).</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -213,6 +225,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Turns the LED off. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -237,6 +250,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Turns the LED on. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

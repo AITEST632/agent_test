@@ -1,1 +1,0 @@
-gcc -I. -I../inc -I../inc/hal -I../inc/services -I. -DUNIT_TEST -Wall -Wextra -std=c99 -o test_app_main.exe test_app_main.c ../src/app/app_main.c ../src/hal/led_hal.c ../src/services/delay_service.c mock_avr_io.c unity.c

@@ -24,7 +24,7 @@
 
 - ✅ Use **K&R style** or **Allman** consistently across the codebase.
 - ✅ All functions and variables must be explicitly typed.
-- ✅ Constants must use `#define` or `const` with descriptive names (`#define MAX_RETRY_COUNT 3`).
+- ✅ Constants must use `#define` with descriptive names (`#define MAX_RETRY_COUNT 3`).
 - ✅ Indent with 4 spaces. No tabs.
 - ✅ Limit line length to 100 characters.
 

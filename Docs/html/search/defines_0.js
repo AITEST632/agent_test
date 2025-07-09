@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blink_5fdelay_5fms_0',['BLINK_DELAY_MS',['../app__main_8c.html#abbbb0c1f5fc38b0a70f057ad43972907',1,'app_main.c']]]
+  ['app_5fmain_5fblink_5fdelay_5fms_0',['APP_MAIN_BLINK_DELAY_MS',['../app__main_8c.html#ae5469b58f1104aa28eee725dcb5ca230',1,'app_main.c']]]
 ];

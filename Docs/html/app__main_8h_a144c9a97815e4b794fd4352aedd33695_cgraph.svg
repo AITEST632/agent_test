@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="delay__service_8c.html#aa0dce6d249d81fb85b082273270ba710" target="_top" xlink:title="Delays execution for a specified number of milliseconds.">
+<g id="a_Node000002"><a xlink:href="delay__service_8c.html#aa0dce6d249d81fb85b082273270ba710" target="_top" xlink:title="Delays execution for a specified number of milliseconds (busy&#45;wait).">
 <polygon fill="white" stroke="#666666" points="152,-134 94,-134 94,-114 152,-114 152,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="123" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">delay_ms</text>
 </a>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AI_AGENT: src/services/delay_service.c File Reference</title>
+<title>Embedded C Project: src/services/delay_service.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AI_AGENT
+   <div id="projectname">Embedded C Project
    </div>
   </td>
  </tr>
@@ -89,6 +89,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">delay_service.c File Reference</div></div>
 </div><!--header-->
@@ -96,22 +97,50 @@ $(function(){ initResizable(false); });
 
 <p>Provides millisecond delay functionality for timing operations.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="delay__service_8h_source.html">delay_service.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="delay__service_8h_source.html">delay_service.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for delay_service.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="delay__service_8c__incl.svg" width="139" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="delay__service_8c__incl.svg" width="178" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0c85c33a15ae3a15bd40b474363d9256" id="r_a0c85c33a15ae3a15bd40b474363d9256"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c85c33a15ae3a15bd40b474363d9256">DELAY_SERVICE_LOOP_COUNT_PER_MS</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a0c85c33a15ae3a15bd40b474363d9256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of loop iterations per millisecond for delay.  <br /></td></tr>
+<tr class="separator:a0c85c33a15ae3a15bd40b474363d9256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa0dce6d249d81fb85b082273270ba710" id="r_aa0dce6d249d81fb85b082273270ba710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0dce6d249d81fb85b082273270ba710">delay_ms</a> (uint16_t ms)</td></tr>
-<tr class="memdesc:aa0dce6d249d81fb85b082273270ba710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delays execution for a specified number of milliseconds.  <br /></td></tr>
+<tr class="memdesc:aa0dce6d249d81fb85b082273270ba710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delays execution for a specified number of milliseconds (busy-wait).  <br /></td></tr>
 <tr class="separator:aa0dce6d249d81fb85b082273270ba710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides millisecond delay functionality for timing operations. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<dl class="section note"><dt>Note</dt><dd>This delay implementation is a busy-wait and is not accurate. Do not use for production timing. </dd>
+<dd>
+Platform-dependent: DELAY_SERVICE_LOOP_COUNT_PER_MS may need adjustment for different MCUs. </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0c85c33a15ae3a15bd40b474363d9256" name="a0c85c33a15ae3a15bd40b474363d9256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c85c33a15ae3a15bd40b474363d9256">&#9670;&#160;</a></span>DELAY_SERVICE_LOOP_COUNT_PER_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DELAY_SERVICE_LOOP_COUNT_PER_MS&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of loop iterations per millisecond for delay. </p>
+<p>Number of loop iterations per millisecond for delay </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aa0dce6d249d81fb85b082273270ba710" name="aa0dce6d249d81fb85b082273270ba710"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0dce6d249d81fb85b082273270ba710">&#9670;&#160;</a></span>delay_ms()</h2>
 
@@ -127,13 +156,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delays execution for a specified number of milliseconds. </p>
+<p>Delays execution for a specified number of milliseconds (busy-wait). </p>
+<p>Delays execution for a specified number of milliseconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ms</td><td>Number of milliseconds to delay. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Busy-wait loop, not suitable for precise timing or low-power applications. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -1,0 +1,31 @@
+# Embedded C Project Automated Agent Workflow Prompt
+
+Follow these steps every time the agent is run in this workspace:
+
+1. **Code Review:**
+   - Review all code files in the `src` folder line by line according to rules and give suggessions.
+   - Provide suggestions for improvements if any rules are violated.
+   - Modify the code to address suggestions if required.
+
+2. **Build:**
+   - Build the project using the provided build system (e.g., `make`).
+   - Save the build output to `build.log` in the root directory.
+
+3. **Unit Testing:**
+   - If the build is successful, run all unit test executables together from the `tests` directory .
+   - Save the unit test results to `test_results.log` in the root directory.
+   - Analyze the unit test results and provide a summary of pass/fail status and any issues found.
+
+4. **Documentation:**
+   - Ensure you are in the root folder.
+   - Generate Doxygen documentation:
+     - If `Doxyfile` or `Docs` folder does not exist, create them automatically.
+     - Ensure `OUTPUT_DIRECTORY = Docs` in `Doxyfile`.
+     - Ensure function call/caller graphs are enabled and Graphviz is available.
+     - Run `doxygen Doxyfile` and confirm output is in `Docs/html/`.
+
+5. **Summary:**
+   - Summarize the results of the review, build, test, and documentation steps.
+
+---
+*This prompt ensures a consistent, automated workflow for Embedded C projects in this workspace.*

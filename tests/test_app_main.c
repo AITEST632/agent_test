@@ -1,3 +1,4 @@
+#define UNIT_TEST
 #include "unity.h"
 #include "mock_avr_io.h"
 #include "../inc/app/app_main.h"

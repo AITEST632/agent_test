@@ -1,0 +1,12 @@
+test_app_main.c:26:test_app_main_should_initialize_led_and_blink:FAIL: Expected XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1 Was XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX0
+
+-----------------------
+1 Tests 1 Failures 0 Ignored 
+FAIL
+test_led_hal.c:37:test_led_init_should_set_ddrb_bit:PASS
+test_led_hal.c:38:test_led_on_should_set_portb_bit:PASS
+test_led_hal.c:39:test_led_off_should_clear_portb_bit:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
